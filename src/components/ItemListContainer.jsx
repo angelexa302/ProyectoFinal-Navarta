@@ -1,30 +1,33 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ItemList from "./ItemList";
+import Loader from "./Loader";
+import { getItemFromCategory } from "../firebase/db";
 
 function ItemListContainer() {
   const [productos, setProductos] = useState([]);
-
+  const [loading, setLoading] = useState(true);
   const { categoria } = useParams();
 
   useEffect(() => {
-    if (categoria) {
-      fetch("/src/data/productos.json")
-        .then((res) => res.json())
-        .then((data) => {
-          const filteredProducts = categoria
-            ? data.filter((prod) => prod.categoria.toLowerCase() === categoria)
-            : data;
-          setProductos(filteredProducts);
-        });
-    } else {
-      fetch("/src/data/productos.json")
-        .then((res) => res.json())
-        .then((data) => setProductos(data));
-    }
+    getItemFromCategory(categoria);
+
+    const getAndSetItems = async () => {
+      setLoading(true);
+      const items = await getItemFromCategory(categoria);
+      setProductos(items);
+      setLoading(false);
+    };
+
+    getAndSetItems();
   }, [categoria]);
 
-  return <ItemList productos={productos} />;
+  return (
+    <>
+      <Loader loading={loading} />
+      {!loading && <ItemList productos={productos} />}
+    </>
+  );
 }
 
 export default ItemListContainer;

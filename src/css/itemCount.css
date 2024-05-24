@@ -1,0 +1,29 @@
+.cart-mas {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cart-mas:hover {
+    background-color: #45a049;
+}
+
+.cart-menos {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cart-menos:hover {
+    background-color: #ff1a1a;
+}

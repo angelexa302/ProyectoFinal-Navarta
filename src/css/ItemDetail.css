@@ -1,0 +1,35 @@
+.itemDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid rgb(211, 137, 144);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 50% auto;
+}
+
+.itemDetail h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.itemDetail img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.itemDetailPrice {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    margin: 10px 0;
+}
+
+.my-custom-button {
+    background-color: #4CAF50 !important;
+    color: white !important;
+}

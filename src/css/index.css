@@ -22,69 +22,8 @@ a:hover {
   color: #535bf2;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgb(218, 131, 140);
-  color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-nav h3 {
-  margin: 0;
-}
-
-.categorias {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  margin-right: auto;
-  margin-left: 200px;
-}
-
-.categorias div {
-  padding: 10px;
-}
-
-.categorias a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-.categorias a:hover {
-  color: gray;
-}
-
-.boton-vinos:hover {
-  color: red;
-  background-color: rgb(252, 194, 194);
-  transition: 300ms;
-}
-
-ul {
-  margin-top: 120px;
-  list-style-type: none;
-
-}
-
-li {
-  color: #213547;
-  margin-top: 50px;
-  font-size: 1rem;
-
-}
-
 body {
-  margin: 115px 75px;
+  margin: 50px 35px;
   display: flex;
   place-items: center;
   min-width: 320px;
@@ -103,9 +42,9 @@ h1 {
 
 .producto-descripcion {
   background-color: #242424;
+  margin-top: auto;
   color: white;
   transition: background-color 0.3s ease, color 0.3s ease;
-
 }
 
 .producto-descripcion:hover {
