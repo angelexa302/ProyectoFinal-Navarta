@@ -16,7 +16,7 @@ function Footer() {
           <Link to="/">
             <img
               style={{ borderRadius: 8, width: 120, marginTop: 5 }}
-              src="/public/assets/2.svg"
+              src="/assets/2.svg"
               alt="Logo"
             />
           </Link>
