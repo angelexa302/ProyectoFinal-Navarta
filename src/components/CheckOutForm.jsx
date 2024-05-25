@@ -50,7 +50,7 @@ function CheckOutForm() {
         }).then(() => {
           clearCart();
           navigate("/cart");
-          window.location.reload();
+          window.location.reload(true);
         });
       })
       .catch((error) => {
