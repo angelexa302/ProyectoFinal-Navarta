@@ -1,4 +1,4 @@
-import cart from "/public/assets/cart.svg";
+import cart from "/src/assets/cart.svg";
 import { useCart } from "../context/carContext";
 
 const CartWidget = () => {

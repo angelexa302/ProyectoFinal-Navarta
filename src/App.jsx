@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import ItemListContainer from "./components/ItemListContainer";
@@ -6,6 +5,7 @@ import ItemDetailContainer from "./components/ItemDetailContainer";
 import Cart from "./components/Cart";
 import CheckOutForm from "./components/CheckOutForm";
 import Footer from "./components/Footer";
+import Modals from "./components/Modals";
 import "./css/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -22,6 +22,7 @@ function App() {
           <Route path="/chekout" element={<CheckOutForm />} />
         </Routes>
         <Footer />
+        <Modals />
       </BrowserRouter>
     </div>
   );

@@ -42,9 +42,10 @@
 }
 
 .producto-imagen {
+  display: flex;
   width: 150px;
   height: 150px;
-  object-fit: cover;
+  object-fit:scale-down;
 }
 
 .producto-detalles {
