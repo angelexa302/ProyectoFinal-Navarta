@@ -11,7 +11,7 @@ const Modals = () => {
         <Modal isOpen={isOpenModal} closeModal={closeModal}>
           <h2>La Boutique del Vino</h2>
           <p>¿Eres mayor de edad?</p>
-          <img src="/public/assets/la-boutique-del-vino.jpg" alt="foto del comercio" />
+          <img src="/assets/la-boutique-del-vino.jpg" alt="foto del comercio" />
           <div className="button-modal">
             <button className="modal-close" onClick={closeModal}>
               SI
